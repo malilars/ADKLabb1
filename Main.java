@@ -9,9 +9,8 @@ public class Main
     public static void main(String [] args)
     {
         // long row = 0;
-        int hej = 0;
         // Read from the file ut
-        ReadFile("~/Desktop/ADK/ut");
+       ReadFile read = new ReadFile("~/Desktop/ADK/ut");
 
         // 3 first letters from each word in the file ut
         // count the lines and write to the in file

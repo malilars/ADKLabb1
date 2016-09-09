@@ -11,7 +11,7 @@ class Mio {
     }
 
     /**
-     * �ppna filen f�r l�sning
+     * öppna filen för läsning
      */
     public static BufferedInputStream OpenRead(String s) {
         try {
@@ -23,7 +23,7 @@ class Mio {
     }
 
     /**
-     * L�s en rad fr�n filen, glufsa radbytet, returnera raden
+     * Läs en rad från filen, glufsa radbytet, returnera raden
      */
     public static String GetLine(BufferedInputStream in) {
         StringBuffer word = new StringBuffer();
@@ -34,14 +34,14 @@ class Mio {
     }
 
     /**
-     * L�s en rad fr�n tangenterna, glufsa radbytet, returnera raden
+     * Läs en rad från tangenterna, glufsa radbytet, returnera raden
      */
     public static String GetLine() {
         return GetLine(keyboard);
     }
 
     /**
-     * L�s ett ord avgr�nsat av blanka fr�n filen och returnera det !
+     * Läs ett ord avgränsat av blanka från filen och returnera det !
      */
     public static String GetWord(BufferedInputStream in) {
         StringBuffer word = new StringBuffer();
@@ -52,14 +52,14 @@ class Mio {
     }
 
     /**
-     * L�s ett ord avgr�nsat av blanka fr�n tangenterna och returnera det
+     * Läs ett ord avgränsat av blanka från tangenterna och returnera det
      */
     public static String GetWord() {
         return GetWord(keyboard);
     }
 
     /**
-     * L�s ett heltal avgr�nsat av blanka fr�n filen och returnera det
+     * Läs ett heltal avgränsat av blanka från filen och returnera det
      */
     public static int GetInt(BufferedInputStream in) {
         String word = GetWord(in);
